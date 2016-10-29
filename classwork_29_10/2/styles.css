@@ -24,7 +24,7 @@ li {
 }
 li:hover{
     color:#fff;
-    /* background-color:#F78181; */
+    background-color:#F78181;
 }
 .sub-list li{
     color:black;
