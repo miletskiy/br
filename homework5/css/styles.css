@@ -1,0 +1,156 @@
+html,
+body {
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 97%;
+    color: #fff;
+}
+
+* {
+    transition: all .2s ease-in;
+}
+
+
+/*Colors:*/
+
+
+/*rgb(39, 110, 154)
+rgb(47, 135, 190)
+rgb(54, 195, 191)
+rgb(133, 81, 134)
+rgb(176, 51, 58)
+rgb(214, 80, 62)
+rgb(252, 193, 92)
+rgb(138, 194, 137)
+rgb(87, 136, 135)
+rgb(188, 80, 135)
+rgb(47, 137, 84)
+rgb(83, 82, 133)*/
+
+h1 {
+    font-size: 1.2em;
+}
+
+.container {
+    height: 100%;
+    border: 10px solid rgb(39, 110, 154);
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: rgb(47, 135, 190);
+}
+
+header,
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+ul:hover li:not(:hover) {
+    opacity: 0.6;
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    height: 120px;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    font-size: 18px;
+    text-align: center;
+    /*opacity: 1;*/
+}
+
+li span {
+    opacity: 0.7;
+}
+
+.wi {
+    font-size: 28px;
+}
+
+.lisbon {
+    background-color: rgb(47, 135, 190);
+    width: 50%;
+}
+
+.paris {
+    /*border-left: none;*/
+    margin-left: -3px;
+    background-color: rgb(54, 195, 191);
+}
+
+.belgrade {
+    /*border-left: none;*/
+    margin-left: -3px;
+    background-color: rgb(133, 81, 134);
+}
+
+.moscow {
+    /*border-top: none;*/
+    margin-top: -3px;
+    background-color: rgb(176, 51, 58);
+}
+
+.tel-aviv {
+    /*    border-top: none;
+    border-left: none;
+*/
+    border-right: none;
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: rgb(214, 80, 62);
+}
+
+.cair {
+    /*    border-top: none;
+    border-left: none;
+*/
+    /*margin-left: -3px;*/
+    margin-top: -3px;
+    background-color: rgb(252, 193, 92);
+}
+
+.new-york {
+    /* border-top: none;
+    border-left: none;*/
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: rgb(138, 194, 137);
+}
+
+.new-delhi {
+    /*border-top: none;*/
+    margin-top: -3px;
+    background-color: rgb(87, 136, 135);
+}
+
+.san-francisco {
+    /*    border-top: none;
+    border-left: none;*/
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: rgb(188, 80, 135);
+    width: 50%;
+}
+
+.tokyo {
+    /*    border-top: none;
+    border-left: none;*/
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: rgb(47, 137, 84);
+}
+
+.sydney {
+    /*border-top: none;*/
+    margin-top: -3px;
+    background-color: rgb(83, 82, 133);
+    width: 100%;
+}
