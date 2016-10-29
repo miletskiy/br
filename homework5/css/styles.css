@@ -1,0 +1,40 @@
+
+html,
+body {
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 97%;
+    color:#fff;
+}
+
+* {
+    /*transition: all .1s ease-in;*/
+}
+
+/*Colors:*/
+/*rgb(39, 110, 154)
+rgb(47, 135, 190)
+rgb(54, 195, 191)
+rgb(133, 81, 134)
+rgb(176, 51, 58)
+rgb(214, 80, 62)
+rgb(252, 193, 92)
+rgb(138, 194, 137)
+rgb(87, 136, 135)
+rgb(188, 80, 135)
+rgb(47, 137, 84)
+rgb(83, 82, 133)*/
+
+
+
+h1{
+    font-size: 1.5em;
+}
+
+.container {
+    height: 100%;
+    border: 10px solid rgb(39, 110, 154);
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: rgb(47, 135, 190);
+}
