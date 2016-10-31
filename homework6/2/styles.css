@@ -8,8 +8,164 @@
 
 html,
 body {
-    min-height: 100%;
+    height: 100%;
     font-family: "Arial", sans-serif;
 }
 
+header {
+    height: 100%;
+    background-image: url(images/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: #fff;
+    float: left;
+    width: 100%
+}
 
+header h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 17%;
+    /*width: 40%;*/
+    /*padding-top: 13%;*/
+    /*line-height: 100%;*/
+    /*vertical-align: middle;*/
+}
+
+header p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+header div {
+    text-align: center;
+    margin-top: 3%;
+}
+
+button {
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6f6f6;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.twitter {
+    background-image: url(images/tw.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.google {
+    background-image: url(images/gog.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 0 30px;
+}
+
+.vk {
+    background-image: url(images/vk.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.special-h2 {
+    margin-top: 120px;
+    margin-left: 100px;
+    /*margin-left: 8%;*/
+    width: 40%;
+}
+
+section {
+    background-color: #f6f6f6;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: top;
+    width: 41%;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin-top: 20px;
+
+}
+
+
+.text-first {
+    /*margin-left: 8%;*/
+    margin-left: 100px;
+}
+
+.text-second {
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.text-second h2 {
+    width: 75%;
+}
+
+.text-third {
+    /*margin-left: 8%;*/
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.img-first {
+    position: relative;
+    top: -170px;
+    left: 135px;
+    width: 38%;
+}
+
+.img-second {
+    position: relative;
+    top: -60px;
+    /*margin-left: 8%;*/
+    margin-left: 100px;
+    width: 39%;
+}
+
+.img-third {
+    width: 38%;
+    margin-left: 105px;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+
+footer {
+    height: 80%;
+    background-image: url(images/banner-bg-u146-fr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #fff;
+}
+
+footer p {
+    font-size: 2.5em;
+}
+
+footer div {
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+    margin-top: 20%;
+}
