@@ -68,8 +68,8 @@ h1 {
 
 h2 {
     color: #795548;
-    text-align: center;
-    margin: 10px auto;
+    padding-left: 20%;
+    margin: 15px auto;
     font-family: 'TinosBold';
     letter-spacing: 1px;
 }
