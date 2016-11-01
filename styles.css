@@ -79,12 +79,14 @@ a {
     text-decoration: none;
     display: block;
     padding: 10px;
+    text-transform: capitalize;
 }
 
 a:hover {
     background: #bcaaa4;
     color: #ffecb3;
     font-family: PFCentroSlabProLight;
+    text-transform: uppercase;
 }
 
 section {
