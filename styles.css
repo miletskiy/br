@@ -1,0 +1,103 @@
+
+/* font-family: "TinosRegular"; */
+@font-face {
+    font-family: "TinosRegular";
+    src: url("fonts/TinosRegular/TinosRegular.woff") format("woff"),
+         url("fonts/TinosRegular/TinosRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "TinosBold"; */
+@font-face {
+    font-family: "TinosBold";
+    src: url("fonts/TinosBold/TinosBold.woff") format("woff"),
+         url("fonts/TinosBold/TinosBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* font-family: "TinosItalic"; */
+@font-face {
+    font-family: "TinosItalic";
+    src: url("fonts/TinosItalic/TinosItalic.woff") format("woff"),
+         url("fonts/TinosItalic/TinosItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* font-family: "PFCentroSlabProLight"; */
+@font-face {
+    font-family: "PFCentroSlabProLight";
+    src: url("fonts/PFCentroSlabProLight/PFCentroSlabProLight.woff") format("woff"),
+         url("fonts/PFCentroSlabProLight/PFCentroSlabProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* font-family: "PFCentroSlabProRegular"; */
+@font-face {
+    font-family: "PFCentroSlabProRegular";
+    src: url("fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.ttf") format("woff"),
+         url("fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FEF5E7;
+    font: 400 16px/1.2 PFCentroSlabProRegular, sans-serif;
+}
+
+h1 {
+    color: #DC7633;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'TinosBold';
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #795548;
+    padding-left: 20%;
+    margin: 15px auto;
+    font-family: 'TinosBold';
+    letter-spacing: 1px;
+}
+
+a {
+    color: #873600;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+a:hover {
+    background: #bcaaa4;
+    color: #ffecb3;
+    font-family: PFCentroSlabProLight;
+    text-transform: uppercase;
+}
+
+section {
+    float: left;
+    margin: 10px auto;
+    width: 50%;
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0 auto;
+    list-style-position: inside;
+    width: 90%;
+}
