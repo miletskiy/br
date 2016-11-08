@@ -1,0 +1,41 @@
+
+/* font-family: "BIG JOHN"; */
+@font-face {
+    font-family: "Big John";
+    src: url("../fonts/BIGJOHN.otf") format("opentype");
+}
+
+
+/* font-family: "Slim Joe"; */
+@font-face {
+    font-family: "Slim Joe";
+    src: url("../fonts/SlimJoe.otf") format("opentype");
+}
+
+html,
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-family: "Big John", sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Slim Joe", sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*Colors*/
+
+
+/*
+#f9f9f9
+#3c4955
+#48bf72
+#eaeaea
+#fff
+*/
