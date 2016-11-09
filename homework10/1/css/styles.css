@@ -1,0 +1,221 @@
+/* font-family: "BIG JOHN"; */
+
+@font-face {
+    font-family: "Big John";
+    src: url("../fonts/BIGJOHN.otf") format("opentype");
+}
+
+
+/* font-family: "Slim Joe"; */
+
+@font-face {
+    font-family: "Slim Joe";
+    src: url("../fonts/SlimJoe.otf") format("opentype");
+}
+
+html,
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Big John", sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Slim Joe", sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+a:hover {
+    color: #48bf72;
+}
+
+
+/*Header section*/
+
+header {
+    background: linear-gradient( rgba(60, 73, 85, 0.85), rgba(60, 73, 85, 0.85)), url(../img/comp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 59vh;
+}
+
+.menu-line {
+    padding-top: 30px;
+    height: 100px;
+    line-height: 80px;
+    font-size: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li:after {
+    content: "/";
+    position: relative;
+    top: -80px;
+    right: -50px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #eaeaea;
+}
+
+nav li a {
+    display: block;
+    margin-left: 100px;
+}
+
+h1 {
+    margin-top: 12vh;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin: auto;
+    color: #eaeaea;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.button {
+    display: block;
+    border: 2px solid #48bf72;
+    color: #48bf72;
+    padding: 10px;
+    margin: 4vh auto;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 12px;
+}
+
+
+/*Portfolio section*/
+
+.filters {
+    margin: 50px auto 35px;
+}
+
+.filters li {
+    margin-left: 5px;
+}
+
+.filters li a {
+    padding: 5px 10px;
+    color: #3c4955;
+    background-color: #eaeaea;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.filters li:first-child a,
+.filters li a:hover {
+    color: #fff;
+    background-color: #48bf72;
+}
+
+.left-column {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+.right-column {
+    display: inline-block;
+    width: 60%;
+}
+
+.items img {
+    padding: 15px;
+    display: block;
+}
+
+.left-column img:last-child:hover {
+    background-color: #48bf72;
+}
+
+.right-column img {
+    width: 91%;
+}
+
+
+/*About section*/
+
+.about {
+    background:
+    linear-gradient(
+        rgba(60, 73, 85, 0.85),
+        rgba(60, 73, 85, 0.85)),
+        url(../img/man.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 47vh;
+    margin-top: 40px;
+}
+
+.about h1 {
+    margin: auto;
+}
+
+.about p {
+    color: #eaeaea;
+}
+
+
+/*Colors*/
+
+
+/*
+#f9f9f9
+#3c4955
+#48bf72
+#eaeaea
+#fff
+*/
