@@ -42,6 +42,11 @@ ul {
     margin: auto;
 }
 
+ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
 a {
     text-decoration: none;
     color: #eaeaea;
@@ -50,6 +55,9 @@ a {
 a:hover {
     color: #48bf72;
 }
+
+
+/*Header section*/
 
 header {
     background: linear-gradient( rgba(60, 73, 85, 0.85), rgba(60, 73, 85, 0.85)), url(../img/comp.png);
@@ -86,11 +94,6 @@ nav ul {
     text-align: right;
 }
 
-nav ul li {
-    display: inline-block;
-    font-size: 1rem;
-}
-
 nav ul li:after {
     content: "/";
     position: relative;
@@ -102,17 +105,16 @@ nav ul li:after {
     color: #eaeaea;
 }
 
-li a {
+nav li a {
     display: block;
     margin-left: 100px;
 }
 
 h1 {
-    margin-top: 150px;
+    margin-top: 12vh;
     margin-bottom: 10px;
     color: #fff;
-    font-size: 2.9rem;
-
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -127,12 +129,83 @@ h2 {
     border: 2px solid #48bf72;
     color: #48bf72;
     padding: 10px;
-    margin: 35px auto;
+    margin: 4vh auto;
     border-radius: 3px;
     text-transform: uppercase;
     width: 120px;
     font-size: 12px;
+}
 
+
+/*Portfolio section*/
+
+.filters {
+    margin: 50px auto 35px;
+}
+
+.filters li {
+    margin-left: 5px;
+}
+
+.filters li a {
+    padding: 5px 10px;
+    color: #3c4955;
+    background-color: #eaeaea;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.filters li:first-child a,
+.filters li a:hover {
+    color: #fff;
+    background-color: #48bf72;
+}
+
+.left-column {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+.right-column {
+    display: inline-block;
+    width: 60%;
+}
+
+.items img {
+    padding: 15px;
+    display: block;
+}
+
+.left-column img:last-child:hover {
+    background-color: #48bf72;
+}
+
+.right-column img {
+    width: 91%;
+}
+
+
+/*About section*/
+
+.about {
+    background:
+    linear-gradient(
+        rgba(60, 73, 85, 0.85),
+        rgba(60, 73, 85, 0.85)),
+        url(../img/man.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 47vh;
+    margin-top: 40px;
+}
+
+.about h1 {
+    margin: auto;
+}
+
+.about p {
+    color: #eaeaea;
 }
 
 
