@@ -1,5 +1,5 @@
-
 /* font-family: "BIG JOHN"; */
+
 @font-face {
     font-family: "Big John";
     src: url("../fonts/BIGJOHN.otf") format("opentype");
@@ -7,6 +7,7 @@
 
 
 /* font-family: "Slim Joe"; */
+
 @font-face {
     font-family: "Slim Joe";
     src: url("../fonts/SlimJoe.otf") format("opentype");
@@ -16,6 +17,7 @@ html,
 body {
     font-family: "Arial", sans-serif;
     background-color: #f9f9f9;
+    font-size: 14px;
 }
 
 h1 {
@@ -26,6 +28,111 @@ h1 {
 h2 {
     font-family: "Slim Joe", sans-serif;
     text-transform: uppercase;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+a:hover {
+    color: #48bf72;
+}
+
+header {
+    background: linear-gradient( rgba(60, 73, 85, 0.85), rgba(60, 73, 85, 0.85)), url(../img/comp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 59vh;
+}
+
+.menu-line {
+    padding-top: 30px;
+    height: 100px;
+    line-height: 80px;
+    font-size: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+nav ul li:after {
+    content: "/";
+    position: relative;
+    top: -80px;
+    right: -50px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #eaeaea;
+}
+
+li a {
+    display: block;
+    margin-left: 100px;
+}
+
+h1 {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2.9rem;
+
+}
+
+h2 {
+    margin: auto;
+    color: #eaeaea;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.button {
+    display: block;
+    border: 2px solid #48bf72;
+    color: #48bf72;
+    padding: 10px;
+    margin: 35px auto;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 12px;
+
 }
 
 
