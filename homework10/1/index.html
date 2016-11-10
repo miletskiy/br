@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Foliac</title>
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="css/normalize.css" rel="stylesheet" type="text/css" />
   <link href="css/layout.css" rel="stylesheet" type="text/css" />
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -66,18 +67,40 @@
   </section>
   <section class="about">
     <div class="container">
-      <h1 class="ba-text-left">Michel Dupont</h1>
-      <h2 class="ba-text-left">Webdesigner, illustrateur, auteur</h2>
-      <p class="ba-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo similique provident quaerat dignissimos vel eos impedit, saepe corrupti, dolor eius soluta, culpa ducimus excepturi voluptas, quis odit recusandae esse labore.</p>
-      <a href="#contact" class="button">me contacter</a>
+      <div class="right-wrap">
+        <h1 class="ba-text-left">Michel Dupont</h1>
+        <h2 class="ba-text-left">Webdesigner, illustrateur, auteur</h2>
+        <p class="ba-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo similique provident quaerat dignissimos vel eos impedit, saepe corrupti, dolor eius soluta, culpa ducimus excepturi voluptas, quis odit recusandae esse labore.Totam quis aut fugit perspiciatis aliquam, suscipit officiis vero beatae ut temporibus iste ipsum illo id, est fuga dolorum quos praesentium obcaecati!</p>
+        <a href="#contact" class="button btn">me contacter</a>
+      </div>
     </div>
   </section>
   <section class="contact" id="contact">
     <div class="container">
+      <h1>me contacter</h1>
       <form action="">
-        <input type="text" placeholder="Votre nom">
-        <input type="email" placeholder="Votre email">
-        <input type="textarea" placeholder="Votre message">
+        <div class="form-row">
+          <div class="form-field ba-float-left">
+            <div class="icon-wrapper ba-float-left">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <input type="text" placeholder=" Votre nom">
+          </div>
+          <div class="form-field ba-float-right">
+            <div class="icon-wrapper ba-float-left">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <input type="email" placeholder=" Votre email">
+          </div>
+        </div>
+        <div class="form-row textarea-height">
+          <div class="form-field ba-float-left">
+            <div class="icon-wrapper ba-float-left">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+            <input type="textarea" placeholder=" Votre message">
+          </div>
+        </div>
         <input type="submit" value="Envoyer">
       </form>
     </div>
