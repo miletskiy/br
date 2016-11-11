@@ -1,0 +1,18 @@
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+    font-size: 3em;
+}

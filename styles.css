@@ -101,3 +101,9 @@ ul {
     list-style-position: inside;
     width: 90%;
 }
+
+span {
+    color: #ddd;
+    font-size: 10px;
+    text-transform:none;
+}

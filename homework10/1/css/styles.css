@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
+
+
+/* font-family: "BIG JOHN"; */
+@font-face {
+    font-family: "Big John";
+    src: url("../fonts/BIGJOHN.otf") format("opentype");
+}
+
+
+/* font-family: "Slim Joe"; */
+@font-face {
+    font-family: "Slim Joe";
+    src: url("../fonts/SlimJoe.otf") format("opentype");
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    /*background-color: black;*/
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #eaeaea;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+a:hover {
+    color: #48bf72;
+}
+
+p {
+    color: #eaeaea;
+}
+
+
+/*Header section*/
+
+header {
+    background: linear-gradient(
+        rgba(60, 73, 85, 0.85),
+        rgba(60, 73, 85, 0.85)),
+        url(../img/comp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 59vh;
+}
+
+.menu-line {
+    padding-top: 30px;
+    height: 100px;
+    line-height: 80px;
+    font-size: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav li:nth-child(odd) a {
+    display: block;
+    margin-left: 60px;
+}
+
+nav li:nth-child(even) {
+    position: relative;
+    left: 30px;
+    font-weight: 100;
+    opacity: 0.5;
+    color: #eaeaea;
+}
+
+.container h1 {
+    font-family: "Big John", sans-serif;
+    text-transform: uppercase;
+    margin-top: 12vh;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.container h2 {
+    font-family: "Slim Joe", sans-serif;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.button {
+    display: block;
+    border: 2px solid #48bf72;
+    color: #48bf72;
+    padding: 10px;
+    margin: 4vh auto;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 12px;
+}
+
+.button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/*Portfolio section*/
+
+.filters {
+    margin: 50px auto 35px;
+}
+
+.filters li {
+    margin-left: 5px;
+}
+
+.filters li a {
+    padding: 5px 10px;
+    color: #3c4955;
+    background-color: #eaeaea;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.filters li:first-child a,
+.filters li a:hover {
+    color: #fff;
+    background-color: #48bf72;
+}
+
+.left-column {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+.right-column {
+    display: inline-block;
+    width: 60%;
+}
+
+.items img {
+    display: block;
+}
+
+.right-column img {
+    width: 91%;
+}
+
+.wrapper {
+    position: relative;
+    color: #fff;
+    padding: 3%;
+}
+
+.cover {
+    position: absolute;
+    background-color: rgba(72, 191, 114, 0.9);
+    width: 94%;
+    height: 95%;
+    border-radius: 5px;
+    padding: 7%;
+    display: none;
+}
+
+.cover h3 {
+    padding-top: 35%;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.cover p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.wrapper:hover .cover {
+    display: block;
+    cursor: pointer;
+}
+
+
+/*About section*/
+
+.about {
+    background: linear-gradient(
+        rgba(60, 73, 85, 0.75),
+        rgba(60, 73, 85, 0.75)),
+        url(../img/man.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 47vh;
+    margin-top: 40px;
+}
+
+.about h1 {
+    margin: auto;
+}
+
+.right-wrap {
+    width: 50%;
+    float: right;
+    font-weight: 400;
+}
+
+.right-wrap h1 {
+    font-size: 1.5rem;
+    margin-top: 15%;
+}
+
+.right-wrap h2 {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.right-wrap p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-top: 25px;
+}
+
+.btn {
+    margin: 25px 0;
+    padding: 5px;
+    font-size: 10px;
+    width: 100px;
+    border-color: #3c4955;
+    color: #3c4955;
+}
+
+
+/*Contact section*/
+
+.contact {
+    height: 50vh;
+}
+
+.contact h1 {
+    color: #48bf72;
+    text-transform: uppercase;
+    font-family: "Big John", sans-serif;
+    margin: 5% auto;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+    height: 35vh;
+}
+
+.form-row {
+    margin: 20px auto;
+    height: 16%;
+}
+
+.form-row:after {
+    clear: both;
+}
+
+.textarea-height {
+    height: 60%;
+}
+
+.icon-wrapper {
+    width: 40px;
+    background-color: #3c4955;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+}
+
+.icon-wrapper i {
+    position: relative;
+    top: 8px;
+    font-size: 1.5rem;
+}
+
+.corner {
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    width: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #3c4955;
+}
+
+.form-field {
+    color: #fff;
+    height: 100%;
+}
+
+.form-field input,
+.form-field textarea {
+    height: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #3c4955;
+    border: 2px solid #3c4955;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: transparent;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #48bf72;
+}
+
+input[type=text],
+input[type=email] {
+    width: 180px;
+}
+
+textarea {
+    width: 419px;
+    height: 100%;
+}
+
+input[type=submit] {
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #48bf72;
+    border: none;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+
+/*Footer */
+
+footer {
+    background-color: #3c4955;
+    height: 20vh;
+}
+
+.copy {
+    float: left;
+    margin-top: 8%;
+    font-size: 12px;
+}
+
+.copy span {
+    font-weight: bold;
+}
+
+.social {
+    float: right;
+    margin-top: 30px;
+}
+
+.social a {
+    display: inline-block;
+    line-height: 70px;
+}
+
+.social a img {
+    margin-left: 25px;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.social a img:hover {
+    width: 70%;
+}
