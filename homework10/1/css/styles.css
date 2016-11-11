@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
 
-
 /* font-family: "BIG JOHN"; */
+
 @font-face {
     font-family: "Big John";
     src: url("../fonts/BIGJOHN.otf") format("opentype");
@@ -10,6 +9,7 @@
 
 
 /* font-family: "Slim Joe"; */
+
 @font-face {
     font-family: "Slim Joe";
     src: url("../fonts/SlimJoe.otf") format("opentype");
@@ -65,10 +65,7 @@ p {
 /*Header section*/
 
 header {
-    background: linear-gradient(
-        rgba(60, 73, 85, 0.85),
-        rgba(60, 73, 85, 0.85)),
-        url(../img/comp.png);
+    background: linear-gradient( rgba(60, 73, 85, 0.85), rgba(60, 73, 85, 0.85)), url(../img/comp.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -228,10 +225,7 @@ nav li:nth-child(even) {
 /*About section*/
 
 .about {
-    background: linear-gradient(
-        rgba(60, 73, 85, 0.75),
-        rgba(60, 73, 85, 0.75)),
-        url(../img/man.png);
+    background: linear-gradient( rgba(60, 73, 85, 0.75), rgba(60, 73, 85, 0.75)), url(../img/man.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 47vh;
@@ -316,20 +310,23 @@ form {
     position: relative;
 }
 
-.left{
+.name {
     position: relative;
 }
 
-.left:before {
+.name:before {
     content: '\f007';
     position: absolute;
     color: #fff;
     font-family: fontawesome;
-    font-size: 20px;
+    font-size: 21px;
+    top: 8px;
+    left: 13px;
 }
-.left:after{
+
+.name:after {
     content: '';
-     position: absolute;
+    position: absolute;
     left: 40px;
     top: 14px;
     width: 0px;
@@ -338,7 +335,6 @@ form {
     border-style: solid;
     border-width: 5px 0 5px 5px;
     border-color: transparent transparent transparent #3c4955;
-    border-color: transparent transparent transparent red;
 }
 
 .icon-wrapper i {
