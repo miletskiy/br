@@ -316,6 +316,31 @@ form {
     position: relative;
 }
 
+.left{
+    position: relative;
+}
+
+.left:before {
+    content: '\f007';
+    position: absolute;
+    color: #fff;
+    font-family: fontawesome;
+    font-size: 20px;
+}
+.left:after{
+    content: '';
+     position: absolute;
+    left: 40px;
+    top: 14px;
+    width: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #3c4955;
+    border-color: transparent transparent transparent red;
+}
+
 .icon-wrapper i {
     position: relative;
     top: 8px;
