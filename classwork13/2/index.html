@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Starter template</title>
+  <title>Form 2</title>
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="css/normalize.css" rel="stylesheet" type="text/css" />
@@ -13,14 +13,53 @@
 <body>
   <div class="container">
     <header>
-      <h1>Hello, World! <i class="fa fa-check-circle " aria-hidden="true"></i></h1>
+      <h1>Form 2 <i class="fa fa-check-circle " aria-hidden="true"></i></h1>
     </header>
     <main>
-
+      <p>Пожалуйста, заполните форму. Обязательные поля помечены</p>
+      <form>
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <label for="id_name">имя
+          </label>
+          <input type="text" id="id_name" required>
+          <label for="id_phone">телефон
+          </label>
+          <input type="tel" id="id_phone">
+          <label for="id_email">емейл
+          </label>
+          <input type="email" id="id_email" required>
+        </fieldset>
+        <fieldset>
+          <legend>Персональная информация</legend>
+          <label for="id_age">возраст
+          </label>
+          <input type="number" id="id_age" required>
+          <label for="id_sex">пол
+          </label>
+          <select name="sex" id="id_sex">
+            <option value="woman">Женщина</option>
+            <option value="man">Мужчина</option>
+            <option value="undefined">В раздумиях</option>
+          </select>
+          <label for="id_qualities">Перечислите личные качества
+          </label>
+          <textarea name="qualities" id="id_qualities" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Выберите ваших любимых животных</legend>
+          <input type="checkbox" name="animal"> Зебра
+          <input type="checkbox" name="animal"> Кошак
+          <input type="checkbox" name="animal"> Анаконда
+          <input type="checkbox" name="animal"> Человек
+          <input type="checkbox" name="animal"> Слон
+          <input type="checkbox" name="animal"> Антилопа
+          <input type="checkbox" name="animal"> Голубь
+          <input type="checkbox" name="animal"> Краб
+        </fieldset>
+        </fieldset>
+      </form>
     </main>
-    <footer>
-
-    </footer>
   </div>
 </body>
 
