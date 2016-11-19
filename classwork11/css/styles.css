@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+html,
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #131316;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Colors*/
+
+
+/*
+#131316 #30%
+#ffffff
+#ffe600
+#131316
+#7e7f7d
+*/
+
+
+/*Navbar section*/
+
+nav {
+    background-color: rgba(19, 19, 22, 0.3);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin-left: 20%;
+    margin-top: 7px;
+}
+
+.logo img {
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    float: right;
+    margin-right: 20%;
+    position: relative;
+    height: 100%;
+}
+
+li {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+li:not(:last-child):after {
+    content: "■";
+    color: #ffe600;
+    position: relative;
+    top: -2px;
+}
+
+li a {
+    color: #ffffff;
+    display: inline-block;
+    padding: 22px 15px;
+    height: 100%;
+}
+
+li a:hover {
+    color: #ffe600;
+}
+
+
+/*Header section*/
+
+header {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    /* position:relative; */
+}
+
+.sub-header {
+    position: relative;
+    height: 38%;
+    top: 34%;
+    background-color: rgba(19, 19, 22, 0.3);
+}
+
+.sub-header:before {
+    background-image: url(../img/arrow_left.png);
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 47%;
+    left: 22%;
+    content: '';
+}
+
+.sub-header:after {
+    background-image: url(../img/arrow_right.png);
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 47%;
+    left: 77%;
+    content: '';
+}
+
+.sub-header h1 {
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 40%;
+    line-height: 50px;
+}
+
+.button {
+    display: block;
+    margin: 40px auto;
+    border: 1px solid #ffe600;
+    width: 150px;
+    padding: 10px;
+    background-color: #ffe600;
+    text-transform: uppercase;
+    color: #131316;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+
+/*Services section*/
+
+main {
+    width: 60%;
+    margin: auto;
+}

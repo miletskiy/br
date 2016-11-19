@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form 2</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Form 2 <div class="check-icon"></div> </h1>
+    </header>
+    <main>
+      <form>
+        <p>Пожалуйста, заполните форму. Обязательные поля помечены</p>
+        <div class="asterisk-icon"></div>
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <div class="left-column">
+            <label for="id_name" class="asterisk-icon1">имя
+            </label>
+            <label for="id_phone">телефон
+            </label>
+            <label for="id_email" class="asterisk-icon2">емейл
+            </label>
+          </div>
+          <div class="right-column">
+            <input type="text" id="id_name" required>
+            <br>
+            <input type="tel" id="id_phone">
+            <br>
+            <input type="email" id="id_email" required>
+            <br>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Персональная информация</legend>
+          <div class="left-column">
+            <label for="id_age" class="asterisk-icon3">возраст
+            </label>
+            <label for="id_sex">пол
+            </label>
+            <label for="id_qualities">Перечислите личные качества
+            </label>
+          </div>
+          <div class="right-column">
+            <input type="number" id="id_age" required>
+            <br>
+            <select name="sex" id="id_sex" class="width">
+              <option value="woman">Женщина</option>
+              <option value="man">Мужчина</option>
+              <option value="undefined">В раздумиях</option>
+            </select>
+            <br>
+            <textarea name="qualities" id="id_qualities" class="width"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Выберите ваших любимых животных</legend>
+          <div class="column">
+            <input type="checkbox" name="animal" id="id_zebra"> Зебра
+            <br>
+            <input type="checkbox" name="animal"> Слон
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Кошак
+            <br>
+            <input type="checkbox" name="animal"> Антилопа
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Анаконда
+            <br>
+            <input type="checkbox" name="animal"> Голубь
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Человек
+            <br>
+            <input type="checkbox" name="animal"> Краб
+          </div>
+        </fieldset>
+        <button type="submit">
+          Отправить информацию
+        </button>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
