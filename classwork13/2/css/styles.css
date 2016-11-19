@@ -1,4 +1,3 @@
-
 html,
 body {
     min-height: 100%;
@@ -15,4 +14,168 @@ h1 {
     text-align: center;
     color: crimson;
     font-size: 1.5em;
+}
+
+title {
+    position: relative;
+}
+
+.check-icon {
+    display: inline-block;
+}
+
+.check-icon:after {
+    content: '\f058';
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 21px;
+    top: 22px;
+}
+
+p {
+    display: inline-block;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.asterisk-icon {
+    display: inline-block;
+}
+
+.asterisk-icon:after {
+    content: '\f069';
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 8px;
+    color: red;
+    top: 15px;
+}
+
+form {
+    position: relative;
+    width: 60%;
+    height: 94vh;
+    background-color: #FFF;
+    margin: auto;
+    padding: 0 35px 30px;
+    color: #222;
+}
+
+fieldset {
+    margin: 20px auto;
+    padding: 0 35% 20px 20px;
+    padding: 20px;
+    border: 1px solid #222;
+}
+
+legend {
+    font-family: serif;
+    font-weight: 700;
+}
+
+label:not([for=id_qualities]) {
+    text-transform: capitalize;
+    display: block;
+}
+
+label[for=id_phone],
+label[for=id_email] {
+    margin-top: 20px;
+}
+
+label:nth-child(3n+1) {
+    margin-top: 0;
+}
+
+input:not([type=checkbox]):nth-child(3n+1) {
+    margin-top: 0;
+}
+
+.right-column,
+.left-column {
+    display: inline-block;
+}
+
+.right-column {
+    width: 50%;
+}
+
+.left-column {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+input:not([type=checkbox]) {
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 16px;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #ddd;
+}
+
+textarea {
+    height: 100px;
+}
+
+.width {
+    width: 100%;
+}
+
+label[for=id_sex] {
+    margin: 27px auto;
+}
+
+label[for=id_qualities] {
+    margin-bottom: 10px;
+}
+
+select {
+    margin: 20px auto;
+}
+
+fieldset:last-child {
+    padding-top: 10px;
+}
+
+.column {
+    float: left;
+    margin-left: 40px;
+}
+
+.column input {
+    margin: 10px auto;
+}
+
+.column:first-of-type {
+    margin-left: 0;
+}
+
+.asterisk-icon1:after {
+    content: '\f069';
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 8px;
+    color: red;
+}
+
+.asterisk-icon2:after {
+    content: '\f069';
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 8px;
+    color: red;
+}
+
+.asterisk-icon3:after {
+    content: '\f069';
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 8px;
+    color: red;
 }

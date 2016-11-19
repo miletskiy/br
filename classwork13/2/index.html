@@ -13,51 +13,79 @@
 <body>
   <div class="container">
     <header>
-      <h1>Form 2 <i class="fa fa-check-circle " aria-hidden="true"></i></h1>
+      <h1 class="title">Form 2 <div class="check-icon"></div> </h1>
     </header>
     <main>
-      <p>Пожалуйста, заполните форму. Обязательные поля помечены</p>
       <form>
+        <p>Пожалуйста, заполните форму. Обязательные поля помечены</p>
+        <div class="asterisk-icon"></div>
         <fieldset>
           <legend>Контактная информация</legend>
-          <label for="id_name">имя
-          </label>
-          <input type="text" id="id_name" required>
-          <label for="id_phone">телефон
-          </label>
-          <input type="tel" id="id_phone">
-          <label for="id_email">емейл
-          </label>
-          <input type="email" id="id_email" required>
+          <div class="left-column">
+            <label for="id_name" class="asterisk-icon1">имя
+            </label>
+            <label for="id_phone">телефон
+            </label>
+            <label for="id_email" class="asterisk-icon2">емейл
+            </label>
+          </div>
+          <div class="right-column">
+            <input type="text" id="id_name" required>
+            <br>
+            <input type="tel" id="id_phone">
+            <br>
+            <input type="email" id="id_email" required>
+            <br>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Персональная информация</legend>
-          <label for="id_age">возраст
-          </label>
-          <input type="number" id="id_age" required>
-          <label for="id_sex">пол
-          </label>
-          <select name="sex" id="id_sex">
-            <option value="woman">Женщина</option>
-            <option value="man">Мужчина</option>
-            <option value="undefined">В раздумиях</option>
-          </select>
-          <label for="id_qualities">Перечислите личные качества
-          </label>
-          <textarea name="qualities" id="id_qualities" cols="30" rows="10"></textarea>
+          <div class="left-column">
+            <label for="id_age" class="asterisk-icon3">возраст
+            </label>
+            <label for="id_sex">пол
+            </label>
+            <label for="id_qualities">Перечислите личные качества
+            </label>
+          </div>
+          <div class="right-column">
+            <input type="number" id="id_age" required>
+            <br>
+            <select name="sex" id="id_sex" class="width">
+              <option value="woman">Женщина</option>
+              <option value="man">Мужчина</option>
+              <option value="undefined">В раздумиях</option>
+            </select>
+            <br>
+            <textarea name="qualities" id="id_qualities" class="width"></textarea>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Выберите ваших любимых животных</legend>
-          <input type="checkbox" name="animal"> Зебра
-          <input type="checkbox" name="animal"> Кошак
-          <input type="checkbox" name="animal"> Анаконда
-          <input type="checkbox" name="animal"> Человек
-          <input type="checkbox" name="animal"> Слон
-          <input type="checkbox" name="animal"> Антилопа
-          <input type="checkbox" name="animal"> Голубь
-          <input type="checkbox" name="animal"> Краб
+          <div class="column">
+            <input type="checkbox" name="animal" id="id_zebra"> Зебра
+            <br>
+            <input type="checkbox" name="animal"> Слон
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Кошак
+            <br>
+            <input type="checkbox" name="animal"> Антилопа
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Анаконда
+            <br>
+            <input type="checkbox" name="animal"> Голубь
+          </div>
+          <div class="column">
+            <input type="checkbox" name="animal"> Человек
+            <br>
+            <input type="checkbox" name="animal"> Краб
+          </div>
         </fieldset>
-        </fieldset>
+        <button type="submit">
+          Отправить информацию
+        </button>
       </form>
     </main>
   </div>
