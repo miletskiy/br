@@ -1,10 +1,13 @@
-
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
+
 /*Colors*/
+
+
 /*
 #a1d9b2
 #59baaa
@@ -15,6 +18,7 @@
 #523b9d
 
 */
+
 html,
 body {
     min-height: 100%;
@@ -24,8 +28,7 @@ body {
 
 .container {
     margin: 20px auto;
-    width: 1200px;
-    border:1px solid crimson;
+    width: 1240px;
     height: 90vh;
 }
 
@@ -36,8 +39,51 @@ h1 {
     text-transform: capitalize;
 }
 
+[class*="grid-"] {
+    float: left;
+    border: 1px solid crimson;
+}
+
+
+/*padding: 10px;*/
+
+
+/*    height: 100px;
+    width: 50px;
+*/
+
 .class {
-     background-image: url(https://placehold.it/600x150);
-     background-image: url(https://placehold.it/600x320);
-     background-image: url(https://placehold.it/200x165);
+    background-image: url(https://placehold.it/600x320);
+    background-image: url(https://placehold.it/200x165);
+}
+
+.first-1 {
+    background-image: url(https://placehold.it/600x150/a1d9b2/000);
+    height: inherit;
+}
+
+.first-2 {
+    background-image: url(https://placehold.it/600x150/59baaa/000);
+    height: inherit;
+}
+
+.width-600 {}
+
+.grid-1-2 {
+    width: 620px;
+    height: 100%;
+    padding: 10px;
+}
+
+.row-150 {
+    height: 170px;
+}
+
+.row-320 {
+    height: 340px;
+}
+
+.second-1 {
+    background-image: url(https://placehold.it/600x320/f64e77/fff);
+    height: inherit;
 }
