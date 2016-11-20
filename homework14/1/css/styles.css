@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*Colors*/
+/*
+#a1d9b2
+#59baaa
+#f64e77
+#777eea
+#f0b052
+#4777bb
+#523b9d
+
+*/
+html,
+body {
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1200px;
+    border:1px solid crimson;
+    height: 90vh;
+}
+
+h1 {
+    /*text-align: center;*/
+    color: black;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.class {
+     background-image: url(https://placehold.it/600x150);
+     background-image: url(https://placehold.it/600x320);
+     background-image: url(https://placehold.it/200x165);
+}
