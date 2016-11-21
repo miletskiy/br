@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*Colors
+
+#a1d9b2
+#59baaa
+#f64e77
+#777eea
+#f0b052
+#4777bb
+#523b9d
+
+*/
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1200px;
+}
+
+h1 {
+    color: #424242;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+[class*="grid-"] {
+    float: left;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+
+/*Grid*/
+
+.grid-1-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.grid-1-3 {
+    height: inherit;
+    width: 33.3333%;
+    padding: 10px;
+}
+
+.grid-1-6 {
+    height: inherit;
+    width: 16.6666%;
+    padding: 10px;
+}
+
+.grid-2-6 {
+    height: inherit;
+    width: 33.3333%;
+    padding: 10px;
+}
+
+.grid-3-6 {
+    height: inherit;
+    width: 50%;
+    padding: 10px;
+}
+
+.row-150 {
+    height: 150px;
+}
+
+.row-155 {
+    height: 155px;
+}
+
+.row-320 {
+    height: 320px;
+}
+
+.row-165 {
+    height: 165px;
+}
+
+.row-185 {
+    height: 185px;
+}
+
+.row-135 {
+    height: 135px;
+}
+
+
+/*Images*/
+
+.row-150-image1 {
+    background-image: url(https://placehold.it/600x150/a1d9b2/000);
+    height: inherit;
+}
+
+.row-150-image2 {
+    background-image: url(https://placehold.it/600x150/59baaa/000);
+    height: inherit;
+}
+
+.row-320-image {
+    background-image: url(https://placehold.it/600x320/f64e77/fff);
+    height: inherit;
+}
+
+.row-165-image {
+    background-image: url(https://placehold.it/200x165/777eea/fff);
+    height: 100%;
+}
+
+.row-155-image {
+    background-image: url(https://placehold.it/300x150/f0b052/fff);
+    height: 100%;
+}
+
+.row-185-image-1 {
+    background-image: url(https://placehold.it/400x185/4777bb/fff);
+    height: 100%;
+}
+
+.row-185-image-2 {
+    background-image: url(https://placehold.it/200x195/4777bb/fff);
+    height: 100%;
+}
+
+.row-135-image-1 {
+    background-image: url(https://placehold.it/200x145/523b9d/fff);
+    height: 100%;
+}
+
+.row-135-image-2 {
+    background-image: url(https://placehold.it/600x135/523b9d/fff);
+    height: 100%;
+}
+
+.row-135-image-3 {
+    background-image: url(https://placehold.it/400x135/523b9d/fff);
+    height: 100%;
+}
