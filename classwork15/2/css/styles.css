@@ -1,7 +1,7 @@
 /* font-family: "MisoRegular"; */
 @font-face {
     font-family: "MisoRegular";
-    src: url(../fonts/miso/miso-regular.otf),
+    src: url(../fonts/miso/miso-regular.otf) format("opentype"),
          url(../fonts/miso/miso-regular.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
@@ -10,7 +10,7 @@
 /* font-family: "MisoBold"; */
 @font-face {
     font-family: "MisoBold";
-    src: url(../fonts/miso/miso-bold.otf),
+    src: url(../fonts/miso/miso-bold.otf) format("opentype"),
          url(../fonts/miso/miso-bold.ttf) format("truetype");
     font-style: normal;
     font-weight: bold;
@@ -19,7 +19,7 @@
 /* font-family: "MisoLight"; */
 @font-face {
     font-family: "MisoLight";
-    src: url(../fonts/miso/miso-light.otf),
+    src: url(../fonts/miso/miso-light.otf) format("opentype"),
          url(../fonts/miso/miso-light.ttf) format("truetype");
     font-style: normal;
     font-weight: lighter;
