@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #fdde7e;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.cup-section {
+    background-color: #FFF;
+    width: 350px;
+    border-radius: 3px;
+    height: 70vh;
+}
+
+.price {
+    color:#02995b;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.image-bronze {
+    background-image: url(../img/bronze.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.image-gold {
+    background-image: url(../img/gold.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.image-silver {
+    background-image: url(../img/silver.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
