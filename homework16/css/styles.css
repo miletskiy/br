@@ -1,0 +1,74 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/* font-family: "LatoRegular"; */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "LatoBold"; */
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* font-family: "LatoLight"; */
+
+@font-face {
+    font-family: "LatoLight";
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
+    font-style: italic;
+    font-weight: lighter;
+}
+
+body {
+    height: 100%;
+    font: 300 16px/1.5 'Lato', Arial, sans-serif;
+    color: #3c3c3c;
+}
+
+.ma-container {
+    margin: auto;
+    max-width: 940px;
+    padding: 0 20px
+}
+
+.ma-container--header {
+    max-width: 600px;
+}
+
+.ma-header {
+    background-color: #aab5ca;
+    background-image: url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 35vh 0;
+    min-height: 100vh;
+}
+
+.ma-header__logo {}
+
+.ma-header__title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 3rem;
+}
+
+.ma-header__text {}
