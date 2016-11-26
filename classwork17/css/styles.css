@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:300,400,600|Source+Sans+Pro:600');
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+body {
+    height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+}
+
+.ma-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
