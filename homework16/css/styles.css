@@ -46,6 +46,9 @@ body {
     padding: 0 20px
 }
 
+
+/*Header*/
+
 .ma-container--header {
     max-width: 600px;
 }
@@ -58,7 +61,7 @@ body {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 18vh 0;
+    padding: 18vh 0 0;
     min-height: 100vh;
     line-height: 1.5;
 }
@@ -93,4 +96,21 @@ body {
 
 .ma-header__scroll:hover {
     transform: scale(1.2, 1.2);
+}
+
+
+/*About us*/
+
+.ma-about {
+    padding: 16vh 0;
+}
+
+.ma-box {
+    border: 2px solid #3c3c3c;
+    padding: 7vh 18vh 3vh;
+    text-align: center;
+}
+
+.ma-box__title {
+    text-transform: uppercase;
 }
