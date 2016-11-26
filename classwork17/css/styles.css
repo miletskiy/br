@@ -13,10 +13,37 @@ body {
     height: 100%;
     font-family: "Arial", sans-serif;
     background-color: #ededed;
+    font-size:14px;
+}
+ul {
+	list-style-type: none;
+	padding:0;
 }
 
 .ma-container {
-    margin: 20px auto;
-    width: 80%;
+    margin: 25px auto;
+    width: 90%;
 }
 
+.ma-top-line__logo {
+	margin-left: 50px;
+
+}
+.ma-top-line__menu {
+	float:right;
+}
+.ma-menu-list__item {
+	/* color:#fff; */
+	text-transform: capitalize;
+	font-weight: 700;
+	display: inline-block;
+}
+.ma-header__title {
+	text-transform: capitalize;
+	font-size:3rem;
+	color:#fff;
+	text-align: center;
+}
+.ma-text--align-center {
+	text-align:center;
+}
