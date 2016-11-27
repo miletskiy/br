@@ -106,7 +106,7 @@ p {
 /*About us*/
 
 .ma-about {
-    padding: 16vh 0;
+    padding: 23vh 0;
 }
 
 .ma-box {
@@ -140,6 +140,15 @@ p {
     margin-bottom: 0;
 }
 
+.ma-box--light {
+    border-color: #fff;
+}
+
+.ma-box--light:before,
+.ma-box--light:after {
+    background-color: #fff;
+}
+
 .ma-box__title {
     text-transform: uppercase;
     font-size: 2rem;
@@ -151,4 +160,20 @@ p {
     margin: 0;
     width: 56%;
     transform: translateY(-50%);
+}
+
+
+/*Services*/
+
+.ma-section {
+    padding: 18vh 0 16vh;
+}
+
+.ma-section--services {
+    background-color: #aab5ca;
+    background-image: url(../img/services.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
 }
