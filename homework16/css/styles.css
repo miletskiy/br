@@ -40,6 +40,10 @@ body {
     color: #3c3c3c;
 }
 
+p {
+    margin-bottom: 1.5rem;
+}
+
 .ma-container {
     margin: auto;
     max-width: 940px;
@@ -107,10 +111,44 @@ body {
 
 .ma-box {
     border: 2px solid #3c3c3c;
+    border-width: 0 2px 2px;
     padding: 7vh 18vh 3vh;
     text-align: center;
+    position: relative;
+}
+
+.ma-box:before,
+.ma-box:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #3c3c3c;
+    width: 22%;
+    top: 0;
+}
+
+.ma-box:before {
+    left: 0;
+}
+
+.ma-box:after {
+    right: 0;
+}
+
+.ma-box:last-child {
+    margin-bottom: 0;
 }
 
 .ma-box__title {
     text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    position: absolute;
+    left: 22%;
+    top: 0;
+    text-align: center;
+    margin: 0;
+    width: 56%;
+    transform: translateY(-50%);
 }
