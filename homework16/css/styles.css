@@ -177,3 +177,76 @@ p {
     background-size: cover;
     color: #fff;
 }
+
+
+/*What we do*/
+
+.ma-box__image {
+    display: inline-block;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.ma-box__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.ma-box__text--whatwedo {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.ma-box__text--whatwedo:last-child {
+    margin-bottom: 10vh;
+}
+
+.ma-box--whatwedo {
+    padding: 7vh 22vh 3vh;
+}
+
+
+/*Our works*/
+
+
+/*Contact*/
+
+.ma-box__title {
+    text-transform: uppercase;
+}
+
+.ma-box__button {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/*Footer*/
+
+.ma-copy {
+    text-align: center;
+    position: relative;
+}
+
+.ma-copy__img {
+    height: 40px;
+}
+
+.ma-copy__text {
+    width: 27vw;
+    margin: 0 auto 70px;
+    text-indent: 50px;
+    font-size: 14px;
+}
+
+.ma-copy__text:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -10px;
+    background-image: url(../img/logo_black.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
