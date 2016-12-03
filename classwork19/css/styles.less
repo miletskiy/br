@@ -13,13 +13,41 @@ body {
 }
 
 .ma-container {
-    margin: 20px auto;
+    margin: 80px auto;
     width: 80%;
+}
+@main_color: #ffcc00;
+
+.ma-text--uppercase {
+	text-transform: uppercase;
+}
+
+.ma-header__sub-title {
+	text-align: center;
+
 }
 
 
-@color: crimson;
+.ma-header__title {
+	color: @main_color;
+	text-align: center;
+}
 
-div {
-	color: @color;
+.ma-body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ma-image,
+.ma-description {
+	width: 50%;
+}
+
+.ma-image__photo {
+	width: 25%;
+	float: right;
+}
+
+.ma-description__button {
+	border:1px solid @main_color;
 }
