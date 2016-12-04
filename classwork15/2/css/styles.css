@@ -1,0 +1,96 @@
+/* font-family: "MisoRegular"; */
+
+@font-face {
+    font-family: "MisoRegular";
+    src: url(../fonts/miso/miso-regular.otf) format("opentype"), url(../fonts/miso/miso-regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "MisoBold"; */
+
+@font-face {
+    font-family: "MisoBold";
+    src: url(../fonts/miso/miso-bold.otf) format("opentype"), url(../fonts/miso/miso-bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* font-family: "MisoLight"; */
+
+@font-face {
+    font-family: "MisoLight";
+    src: url(../fonts/miso/miso-light.otf) format("opentype"), url(../fonts/miso/miso-light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all .3s ease-in;
+}
+
+
+html,
+body {
+    height: 100%;
+    font-family: MisoRegular, sans-serif;
+    font-size: 14px;
+    background-color: #fdde7e;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.cup-section {
+    background-color: #FFF;
+    width: 30%;
+    border-radius: 3px;
+    height: 70vh;
+}
+.cup-section:hover {
+    height: 80vh;
+}
+
+.price {
+    text-align: center;
+    color: #02995b;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.image-bronze {
+    background: url(../img/bronze.png) 55% 60% no-repeat;
+    height: 135px;
+}
+
+.image-gold {
+    background: url(../img/gold.png) 55% 60% no-repeat;
+    height: 135px;
+}
+
+.image-silver {
+    background: url(../img/silver.png) 55% 60% no-repeat;
+    height: 135px;
+}
+
+h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+}

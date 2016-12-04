@@ -1,0 +1,12 @@
+
+# Ignore docs files
+.sass-cache
+*.css.map
+
+
+# Thanks https://gist.github.com/mynameispj/10143204
+# https://robots.thoughtbot.com/sass-source-maps-chrome-magic
+
+# Not working?
+# Try: http://stackoverflow.com/questions/11451535/gitignore-not-working
+# Try: http://stackoverflow.com/questions/1139762/gitignore-file-not-ignoring

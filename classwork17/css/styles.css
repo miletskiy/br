@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:300,400,600|Source+Sans+Pro:600');
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+body {
+    height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+    font-size:14px;
+}
+ul {
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+.ma-container {
+    margin:auto;
+    width: 90%;
+    padding-top:25px;
+}
+
+.ma-header {
+	background-image: url(../img/index-bg.jpg);
+	height: 100vh;
+}
+.ma-top-line__logo {
+	margin-left: 50px;
+	display: inline-block;
+}
+.ma-top-line__menu {
+	float:right;
+}
+.ma-list-item {
+	display: inline-block;
+	/* margin-left: 50px; */
+}
+.ma-list-item__link {
+	color:#fff;
+	text-transform: capitalize;
+	font-weight: 700;
+	display: block;
+	padding: 1rem;
+
+}
+.ma-list-item__link:hover {
+	color: #ddd;
+	background-color:#fff;
+}
+
+.ma-header__title {
+	text-transform: capitalize;
+	font-size:3rem;
+	color:#fff;
+	text-align: center;
+	padding-top: 30vh;
+}
+.ma-text--align-center {
+	text-align:center;
+}
+
+.ma-header__text {
+	color:#fff;
+	font-size:1.1rem;
+}
+
+.ma-header__button {
+	text-align: center;
+	margin: auto;
+	display: block;
+	width: 180px;
+	text-transform: capitalize;
+	color:#fff;
+	padding: 20px 30px;
+	background-color: blue;
+	border-radius: 30px;
+}

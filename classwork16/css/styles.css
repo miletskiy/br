@@ -1,0 +1,19 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Arial", sans-serif;
+    background-color: #ededed;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+

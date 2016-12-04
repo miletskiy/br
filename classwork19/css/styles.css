@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #ededed;
+}
+.ma-container {
+  margin: 80px auto;
+  width: 80%;
+}
+.ma-text--uppercase {
+  text-transform: uppercase;
+}
+.ma-header__sub-title {
+  text-align: center;
+}
+.ma-header__title {
+  color: #ffcc00;
+  text-align: center;
+}
+.ma-body {
+  display: flex;
+  justify-content: space-between;
+}
+.ma-image,
+.ma-description {
+  width: 50%;
+}
+.ma-image__photo {
+  width: 25%;
+  float: right;
+}
+.ma-description__button {
+  border: 1px solid #ffcc00;
+}
