@@ -16,6 +16,11 @@
       -ms-align-items: @align;
           align-items: @align;
 }
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}
 
 @background_color:#9789f9;
 @background_item:#fff;
@@ -35,6 +40,10 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     background-color: @background_color;
 }
+ul {
+    list-style: none;
+    padding:0;
+}
 
 .ma-prices {
     .flex-display();
@@ -47,10 +56,25 @@ body {
     background-color: @background_item;
     height: 80vh;
     width: 25vw;
+    .flex-display();
+    .flex-direction(column);
+    .justify-content(space-around);
+    .align-items(center);
+
 }
+
 .ma-item--margin-side {
     margin: 0 30px;
 }
+.ma-item__header{
+    font-family: Neueu;
+}
+.ma-item__title {
+    text-transform: uppercase;
+    font-family: Neueu;
+    font-weight: 700;
+}
+
 .ma-item__footer {
     background-color:@background_add;
 }
