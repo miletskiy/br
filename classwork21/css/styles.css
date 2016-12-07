@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600');
+/* font-family: "BebasNeue Regular"; */
+@font-face {
+  font-family: "BebasNeue Regular";
+  src: url("../fonts/bebas/BebasNeue Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "BebasNeue Bold"; */
+@font-face {
+  font-family: "BebasNeue Bold";
+  src: url("../fonts/bebas/BebasNeue Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+/* font-family: "BebasNeue Light"; */
+@font-face {
+  font-family: "BebasNeue Light";
+  src: url("../fonts/bebas/BebasNeue Light.ttf") format("truetype");
+  font-style: italic;
+  font-weight: lighter;
+}
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -49,11 +70,11 @@ ul {
   margin: 0 30px;
 }
 .ma-item__header {
-  font-family: Neueu;
+  font-family: "BebasNeue Bold";
 }
 .ma-item__title {
   text-transform: uppercase;
-  font-family: Neueu;
+  font-family: "BebasNeue Bold";
   font-weight: 700;
 }
 .ma-item__footer {
