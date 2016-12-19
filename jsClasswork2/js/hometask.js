@@ -65,14 +65,56 @@ getFactorial();
 // Задание по функциям:
 
 // 1. Создайте метод с именем Calculate, который принимает в качестве параметров три целочисленных значения и выводит на экран среднее арифметическое этих параметров.
-
+/*
 function Calculate(num1, num2, num3) {
     var sum = (num1 + num2 + num3)/3;
     document.write( "Среднее арифметическое чисел равно " + parseInt(sum));
 }
 Calculate(4,6,5);
 
-// 2.Создайте четыре функции для арифметических действий: (Add – сложение, Sub – вычитание, Mul – умножение, Div – деление). Каждая функция должна принимать два параметра и выводить на экран результат вычисления. Функция деления должна делать проверку деления на ноль. Пользователь вводит значения, над которыми хочет произвести операцию и выбрать саму операцию.
+*/
+// 2.Создайте четыре функции для арифметических действий:
+//(Add – сложение, Sub – вычитание, Mul – умножение, Div – деление).
+//Каждая функция должна принимать два параметра и выводить на экран результат
+//вычисления. Функция деления должна делать проверку деления на ноль.
+// Пользователь вводит значения, над которыми хочет произвести операцию и выбрать саму операцию.
+
+var userInput = prompt("Введите операцию, которую хотите осуществить (Add – сложение, Sub – вычитание, Mul – умножение, Div – деление, Exit - выход.)", "");
+var userNumber1 = prompt("Введите первое число");
+var userNumber2 = prompt("Введите второе число");
+var result = 0;
+var operations = ["Add", "Sub", "Mul", "Div"];
+
+while ( userInput!= null || userInput!= "Exit" ) {
+	document.write(userInput);
+	if (operations.includes(userInput)) {
+		switch (userInput) {
+			case "Add":
+			result = userNumber1 + userNumber2;
+			userInput = "Exit";
+			break;
+			case "Sub":
+			result = userNumber1 - userNumber2;
+			userInput = "Exit";
+			break;
+			case "Mul":
+			result = userNumber1 * userNumber2;
+			userInput = "Exit";
+			break;
+			case "Div":
+			result = userNumber1 / userNumber2;
+			userInput = "Exit";
+			break;
+			default:
+			userInput = "Exit";
+
+		}
+		document.write(userInput);
+		document.write(result);
+	} else{
+		userInput = prompt("Введите операцию, которую хотите осуществить(Add – сложение, Sub – вычитание, Mul – умножение, Div – деление)", "");
+	}
+};
 
 // 3. Напишите функцию, которая будет принимать число и определять:
 // 1. Является ли введенное число положительным или отрицательным.
