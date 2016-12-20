@@ -1,16 +1,16 @@
 // Задание по логическим и циклическим конструкциям:
 // 1. Создайте две целочисленные переменные и присвойте им некоторые значения.
-	 // По этим значениям, используя вложенные циклы, нарисуйте прямоугольник из звездочек.
+// По этим значениям, используя вложенные циклы, нарисуйте прямоугольник из звездочек.
 var i, j;
 
 // var first = 15;
 // var second = 20;
 
 // for (i = 0 ; i < first ; i++) {
-// 	for( j = 0; j < second; j++) {
-// 		document.write("*")
-// 	}
-// 	document.write("<br>")
+//  for( j = 0; j < second; j++) {
+//      document.write("*")
+//  }
+//  document.write("<br>")
 // };
 
 // *************************
@@ -22,10 +22,10 @@ var i, j;
 /* var A = 1, B = 10, sum = 0, odd = "";
 
 for( i = A; i <= B; i++) {
-	sum += i
-	if (i % 2 == 0) {
-		odd+= i +", "
-	} ;
+    sum += i
+    if (i % 2 == 0) {
+        odd+= i +", "
+    } ;
 }
 document.write("Сумма всех чисел: " + sum + "<br>");
 document.write("Нечетные значения от А до В:  <br>" + odd);
@@ -79,44 +79,91 @@ Calculate(4,6,5);
 //вычисления. Функция деления должна делать проверку деления на ноль.
 // Пользователь вводит значения, над которыми хочет произвести операцию и выбрать саму операцию.
 
-var userInput = prompt("Введите операцию, которую хотите осуществить (Add – сложение, Sub – вычитание, Mul – умножение, Div – деление, Exit - выход.)", "");
-var userNumber1 = prompt("Введите первое число");
-var userNumber2 = prompt("Введите второе число");
+var userInput, userNumber1, userNumber2, flag = true;
 var result = 0;
 var operations = ["Add", "Sub", "Mul", "Div"];
 
-while ( userInput!= null || userInput!= "Exit" ) {
-	document.write(userInput);
-	if (operations.includes(userInput)) {
-		switch (userInput) {
-			case "Add":
-			result = userNumber1 + userNumber2;
-			userInput = "Exit";
-			break;
-			case "Sub":
-			result = userNumber1 - userNumber2;
-			userInput = "Exit";
-			break;
-			case "Mul":
-			result = userNumber1 * userNumber2;
-			userInput = "Exit";
-			break;
-			case "Div":
-			result = userNumber1 / userNumber2;
-			userInput = "Exit";
-			break;
-			default:
-			userInput = "Exit";
 
-		}
-		document.write(userInput);
-		document.write(result);
-	} else{
-		userInput = prompt("Введите операцию, которую хотите осуществить(Add – сложение, Sub – вычитание, Mul – умножение, Div – деление)", "");
-	}
+while (flag) {
+    userInput = prompt("Введите операцию, которую хотите осуществить(Add – сложение, Sub – вычитание, Mul – умножение, Div – деление)", "");
+
+    if (operations.includes(userInput)) {
+        userNumber1 = +prompt("Введите первое число");
+        userNumber2 = +prompt("Введите второе число");
+        switch (userInput) {
+            case "Add":
+                result = userNumber1 + userNumber2;
+                flag = false;
+                break;
+            case "Sub":
+                result = userNumber1 - userNumber2;
+                flag = false;
+                break;
+            case "Mul":
+                result = userNumber1 * userNumber2;
+                flag = false;
+                break;
+            case "Div":
+                result = userNumber1 / userNumber2;
+                flag = false;
+                break;
+        }
+        document.write("Результат операции " + result + "<br>");
+    } else if (userInput === null || userInput === "Exit") {
+        flag = false
+    }
 };
+
+document.write("До свидания!");
+
 
 // 3. Напишите функцию, которая будет принимать число и определять:
 // 1. Является ли введенное число положительным или отрицательным.
 // 2. Является ли оно простым
 // 3. Делится ли оно на 2, 5, 3, 6, 9 без остатка
+
+/*
+function defineNumber(num) {
+
+    if (!num) {
+        num = 2
+    };
+    var absNum = Math.abs(num);
+
+    // is negative
+    var sign = "отрицательное";
+    if (num >= 0) {
+        sign = "положительное"
+    };
+
+    // is prime
+    function isPrime(number) {
+        var start = 2;
+        while (start <= Math.sqrt(number)) {
+            if (number % start++ < 1) return false;
+        }
+        return number > 1;
+    };
+    var prime = isPrime(absNum);
+
+    var simple = "составное";
+    if (prime) {
+        simple = "простое"
+    };
+
+    // is divide to 2, 5, 3, 6, 9
+    var dividers = [2, 5, 3, 6, 9];
+    var divide = "делится";
+
+    for (d in dividers) {
+        if (absNum % d !== 0) {
+            divide = "не делится"
+            break
+        }
+    };
+
+    document.write("Число " + sign + ", " + simple + " и " + divide + " на 2, 5, 3, 6, 9 без остатка");
+}
+
+defineNumber(42);
+*/
