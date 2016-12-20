@@ -104,6 +104,9 @@ while (flag) {
                 flag = false;
                 break;
             case "Div":
+                if (userNumber2 === 0) {
+                    alert("Если делить на ноль - получится бесконечность. Оно вам надо?")
+                    break };
                 result = userNumber1 / userNumber2;
                 flag = false;
                 break;
