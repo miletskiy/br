@@ -7,16 +7,23 @@
 
 // "use strict";
 
-// var salaries = {
-// "Вася": 100,
-// "Петя": 300,
-// "Даша": 250
-// };
+var salaries = {
+"Вася": 100,
+"Петя": 300,
+"Даша": 250
+};
 
 //... ваш код выведет 650
 
+function getSum(salaries) {
+    let sum = 0;
+    for (s in salaries) {
+        sum += salaries[s]
+    }
+    document.write(sum);
+}
 
-
+getSum(salaries);
 
 // <----------------------------->
 
