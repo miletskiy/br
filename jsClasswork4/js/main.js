@@ -23,7 +23,8 @@ function getSum(salaries) {
     document.write(sum);
 }
 
-getSum(salaries);
+// var salaries = {};
+// getSum(salaries);
 
 // <----------------------------->
 
@@ -33,13 +34,33 @@ getSum(salaries);
 
 // Если объект пустой, то пусть он выводит «нет сотрудников».
 // Например:
-// "use strict";
+"use strict";
 
-// var salaries = {
-// "Вася": 100,
-// "Петя": 300,
-// "Даша": 250
-// };
+var salaries = {
+"Вася": 100,
+"Петя": 300,
+"Даша": 250
+};
+// var salaries = {};
+
+
+function getMaxSalary(salaries) {
+    let max = 0, rich, message;
+    if (Object.keys(salaries).length === 0 && salaries.constructor === Object) {
+        message = "Нет сотрудников";
+    }else {
+        for(s in salaries) {
+            if (max < salaries[s]) {
+                max = salaries[s];
+                rich = s;
+            }
+        }
+        message = "Самая большая зарплата у сотрудника с именем "+rich;
+    }
+    document.write(message);
+}
+
+getMaxSalary(salaries);
 
 //... ваш код выведет Петя
 
