@@ -60,7 +60,7 @@ function getMaxSalary(salaries) {
     document.write(message);
 }
 
-getMaxSalary(salaries);
+// getMaxSalary(salaries);
 
 //... ваш код выведет Петя
 
@@ -82,4 +82,20 @@ getMaxSalary(salaries);
 // var arr = [1, 2, 3];
 // console.log(map(square, arr)); // [1, 4, 9]
 // console.log(arr); // [1, 2, 3]
+
+function map(fn, array) {
+    let result = [];
+    for (a in array){
+        result.push(fn(array[a]));
+    }
+    return result;
+}
+
+
+function square(number) {
+    return number*number;
+};
+
+
+document.write(map(square, [11, 22, 32, 24]));
 
