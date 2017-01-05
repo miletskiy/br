@@ -25,8 +25,8 @@ function min(a, b) {
     return Math.min(a, b);
 }
 
-min(2, 5) == 2
-min(3, -1) == -1
+// min(2, 5) == 2
+// min(3, -1) == -1
 
 // <----------------------------->
 
@@ -56,8 +56,10 @@ function checkInput(number) {
     }
 }
 
-checkInput(100);
+// checkInput(100);
 
+
+// <----------------------------->
 
 
 // Task 4
@@ -68,3 +70,32 @@ checkInput(100);
 // Другими словами, n>1 – простое, если при делении на любое число от 2 до n-1 есть остаток.
 
 // Создайте функцию, которая выводит все простые числа из интервала, который задает пользователь.
+
+
+// helper function to determine number
+function isPrime(number) {
+    if (number==1) return false;
+    for (var i = 2; i*i <= number; i++) {
+        if (number%i==0) {
+            return false;
+        }
+    }
+    return true;
+};
+
+// main function
+function simpleNumbers() {
+    userInput1 = +prompt("Введите число - начало интервала (больше 1)");
+    userInput2 = +prompt("Введите число - конец интервала (больше предыдущего)");
+    let result = [];
+
+    for(var i = userInput1; i <= userInput2; i++) {
+        if (isPrime(i)) {
+            result.push(" " + i);
+        }
+    }
+
+    document.write("Все простые числа из интервала от "+userInput1+" до "+userInput2+": " + result);
+}
+
+simpleNumbers();
