@@ -5,54 +5,68 @@
 See the http://stackoverflow.com/a/38517365/5450939
 */
 window.onload = function() {
-    loginForm.username.onchange = validateField;
-    loginForm.email.onchange = validateField;
-    // document.forms[0].addEventListener("submit", validateForm);
-
-    let username = loginForm.username,
-        email = loginForm.email,
-        password = loginForm.password,
-        confirm = loginForm.confirm;
-
+    loginForm.username.onchange = nameValidate;
+    loginForm.email.onchange = emailValidate;
+    loginForm.addEventListener("submit", validateForm);
 };
 
-function validateForm() {
+
+function validateForm(event) {
+
+    let password = loginForm.password.value,
+        confirm = loginForm.confirm.value,
+        inValid;
 
     // validate fields
-    for (let i = 0; document.forms[0].elements.length < i; i++) {
-        let inValid = validateField(form.elements[i], form.elements[i].value);
+    for (let i = 0; i < loginForm.elements.length; i++) {
+        let el = loginForm.elements[i];
+        if ((el.type === "text") || (el.type === "email")) {
+            inValid = !validateField(el);
+        }
     };
 
     // check for accordance
     if (password !== confirm) {
-        inValid = true;
+        alert("Passwords didn't match. Please, check it!");
+        event.preventDefault();
     }
 
     // message for user
     if (inValid) {
-        alert("Please, check the form!");
+        alert("Please, correct the wrong fields!");
+        event.preventDefault();
     }
-
 }
 
-function validateField() {
+
+function validateField(field) {
     let namePattern = /^[a-zA-Z0-9_.-]{3,42}$/,
         emailPattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/,
         flag = false;
 
     // validation
-    if (this.type == "text") {
-        flag = namePattern.test(this.value);
-    } else if (this.type == "email") {
-        flag = emailPattern.test(this.value);
-    };
+    if (field.type == "text") {
+        flag = namePattern.test(field.value);
+    } else if (field.type == "email") {
+        flag = emailPattern.test(field.value);
+    } else {
+        return true;
+    }
 
     // highlighting
     if (flag) {
-        this.className = "valid";
+        field.className = "valid";
     } else {
-        this.className = "invalid";
+        field.className = "invalid";
     }
 
     return flag;
 };
+
+function nameValidate() {
+    validateField(this);
+}
+
+function emailValidate() {
+    validateField(this);
+}
