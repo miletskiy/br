@@ -28,3 +28,10 @@ input {
 .valid {
     background-color: lightgreen;
 }
+
+.password {
+    display: inline-block;
+    background-color: navy;
+    height: 8px;
+    width: 8vw;
+}

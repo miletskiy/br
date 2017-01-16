@@ -7,9 +7,9 @@ See the http://stackoverflow.com/a/38517365/5450939
 window.onload = function() {
     loginForm.username.onchange = nameValidate;
     loginForm.email.onchange = emailValidate;
+    loginForm.password.onchange = passwordValidate;
     loginForm.addEventListener("submit", validateForm);
 };
-
 
 function validateForm(event) {
 
@@ -38,7 +38,6 @@ function validateForm(event) {
     }
 }
 
-
 function validateField(field) {
     let namePattern = /^[a-zA-Z0-9_.-]{3,42}$/,
         emailPattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/,
@@ -61,7 +60,7 @@ function validateField(field) {
     }
 
     return flag;
-};
+}
 
 function nameValidate() {
     validateField(this);
@@ -69,4 +68,8 @@ function nameValidate() {
 
 function emailValidate() {
     validateField(this);
+}
+
+function passwordValidate() {
+
 }
