@@ -13,6 +13,27 @@ var coordKiev = { lat: 50.449241, lng: 30.516643 },
     coordPoltava = { lat: 49.592754, lng: 34.547149 },
     centerMap = { lat: 48.379557, lng: 31.165632 };
 
+var offices = ["Kiev", "Odessa", "Poltava"];
+var data = {
+    "Kiev": {
+        "coord": { lat: 50.449241, lng: 30.516643 },
+        "addr": "Киев, ул. Прорезная, 18/1г",
+        "img": imgKiev,
+    },
+
+    "Odessa": {
+        "coord": { lat: 46.487037, lng: 30.732549 },
+        "addr": "Одесса, ул. Елисаветинская, 18",
+        "img": imgOdessa,
+
+    },
+    "Poltava": {
+        "coord": { lat: 49.592754, lng: 34.547149 },
+        "addr": "Полтава, площадь Независимости, 7",
+        "img": imgPoltava,
+    },
+}
+
 
 function initMap() {
 
@@ -20,29 +41,35 @@ function initMap() {
         center: centerMap,
         zoom: 7
     });
+    var marker;
 
-    var marker = new google.maps.Marker({
-        position: coordKiev,
-        map: map,
-        icon: imgKiev,
-        title: 'Hello World!'
-    });
+    function setMarker(office) {
+        marker = new google.maps.Marker({
+            map: map,
+            position: office.coord,
+            icon: office.img
+        });
+    }
+
+    for (var i = 0; i < offices.length; i++) {
+        setMarker(data[offices[i]]);
+    }
+
 }
 
+function changeCity(city) {
+    if (city === "Kiev") {
+        map.panTo(coordKiev);
+    } else if (city === "Odessa") {
+        map.panTo(coordOdessa);
+    } else if (city === "Poltava") {
+        map.panTo(coordPoltava);
+    } else {
+        map.panTo(centerMap);
+    }
+}
 
 window.onload = function() {
-
-    function changeCity(city) {
-        if (city === "Kiev") {
-            map.panTo(coordKiev);
-        } else if (city === "Odessa") {
-            map.panTo(coordOdessa);
-        } else if (city === "Poltava") {
-            map.panTo(coordPoltava);
-        } else {
-            map.panTo(centerMap);
-        }
-    }
 
     document.querySelector(".offices").addEventListener("change", function() {
         changeCity(this.value);
