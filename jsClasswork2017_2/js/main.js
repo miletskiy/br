@@ -11,7 +11,8 @@ $(document).ready(function() {
         infinite: true,
         cssEase: 'linear',
         arrows:true,
-        // nextArrow:"<button type="button" class="slick-next">Next</button>",
+        nextArrow:'<span><i class="fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i></span>',
+        prevArrow: '<button type="button" data-role="none" class="slick-pre slick-arro" aria-label="Previous" role="button" style=""><i class="fa fa-asterisk" aria-hidden="true"></i></button>'
     });
 
 });
