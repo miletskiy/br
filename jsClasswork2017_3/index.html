@@ -11,7 +11,15 @@
 
 <body>
   <div id="map"> </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR6KausbfmVNDC6HM2uBhhp8OLaBL4rcE&callback=initMap">
+  <div id="offices">
+    <select class="offices" autofocus>
+      <option value="initial">Начальное состояние</option>
+      <option value="Kiev">Киев, ул. Прорезная, 18/1г</option>
+      <option value="Odessa">Одесса, ул. Елисаветинская, 18</option>
+      <option value="Poltava">Полтава, площадь Независимости, 7</option>
+    </select>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR6KausbfmVNDC6HM2uBhhp8OLaBL4rcE&callback=initMap">
   </script>
 </body>
 
