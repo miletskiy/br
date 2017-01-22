@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google Map 1</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="map"> </div>
+  <div id="offices">
+    <p>Выберите офис: </p>
+    <select class="offices" autofocus>
+      <option value="initial"> Центр </option>
+      <option value="Kiev"> Киев </option>
+      <option value="Odessa"> Одесса </option>
+      <option value="Poltava"> Полтава </option>
+    </select>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR6KausbfmVNDC6HM2uBhhp8OLaBL4rcE&callback=initMap">
+  </script>
+</body>
+
+</html>

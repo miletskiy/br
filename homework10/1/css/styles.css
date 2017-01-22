@@ -436,3 +436,11 @@ footer {
 .social a img:hover {
     width: 70%;
 }
+
+
+// Slider options
+#eklmn {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

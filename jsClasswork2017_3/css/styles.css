@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: crimson;
+}
+
+#map {
+    height: 100%;
+}
+
+#offices {
+    z-index: 5;
+    position: absolute;
+    left: 10vw;
+    top: 0;
+    background-color: #bc2556;
+    border-radius: 3px;
+}
+
+#offices select {
+    border: none;
+    font-size: 14px;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    color: #fff;
+    padding: 5px 8px;
+}
+
+#offices select:focus {
+    outline: none;
+}
+
+#offices p {
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+.city {
+    display: block;
+    font-weight: 300;
+    color: #444444;
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.phone {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #444444;
+}

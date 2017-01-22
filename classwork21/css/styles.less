@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600');
+
+/* font-family: "BebasNeue Regular"; */
+@font-face {
+    font-family: "BebasNeue Regular";
+    src: url("../fonts/bebas/BebasNeue Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "BebasNeue Bold"; */
+@font-face {
+    font-family: "BebasNeue Bold";
+    src: url("../fonts/bebas/BebasNeue Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* font-family: "BebasNeue Light"; */
+@font-face {
+    font-family: "BebasNeue Light";
+    src: url("../fonts/bebas/BebasNeue Light.ttf") format("truetype");
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.flex-display(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+
+.justify-content(@justify: flex-start) {
+    -webkit-justify-content: @justify;
+    -ms-justify-content: @justify;
+    justify-content: @justify;
+}
+
+.align-items(@align: stretch) {
+    -webkit-align-items: @align;
+    -ms-align-items: @align;
+    align-items: @align;
+}
+
+.flex-direction(@direction: row) {
+    -webkit-flex-direction: @direction;
+    -ms-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+@background_color: #9789f9;
+@background_item: #fff;
+@button_color: #6fcffb;
+@button_active: fd8d7b;
+@background_add: #f5f4f9;
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: @background_color;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ma-prices {
+    .flex-display();
+    .justify-content(center);
+    .align-items(center);
+    height: 100%;
+}
+
+.ma-item {
+    background-color: @background_item;
+    height: 80vh;
+    width: 25vw;
+    .flex-display();
+    .flex-direction(column);
+    .justify-content(space-around);
+    .align-items(center);
+}
+
+.ma-item--margin-side {
+    margin: 0 30px;
+}
+
+.ma-item__header {
+    font-family: "BebasNeue Bold";
+}
+
+.ma-item__title {
+    text-transform: uppercase;
+    font-family: "BebasNeue Bold";
+    font-weight: 700;
+}
+
+.ma-item__footer {
+    background-color: @background_add;
+}
