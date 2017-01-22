@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Routes</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="map"> </div>
+  <div id="user_input">
+    <input type="text" name="start" id="start" placeholder="Начало маршрута" autofocus>
+    <input type="text" name="end" id="end" placeholder="Конец маршрута">
+    <button id="route">Продожить маршрут</button>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR6KausbfmVNDC6HM2uBhhp8OLaBL4rcE&callback=initMap&libraries=places">
+  </script>
+</body>
+
+</html>

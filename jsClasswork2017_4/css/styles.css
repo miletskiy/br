@@ -1,0 +1,35 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+#user_input {
+    z-index: 5;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+    background-color: #bc2556;
+    border-radius: 3px;
+    padding: 15px;
+    opacity: 0.9;
+}
+
+input {
+    width: 28vw;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 1px solid #fff;
+    outline-offset: 1px;
+}
+
+button {
+    font-size: 16px;
+}
