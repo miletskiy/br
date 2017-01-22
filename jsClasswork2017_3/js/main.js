@@ -11,26 +11,31 @@ var coordKiev = { lat: 50.449241, lng: 30.516643 },
     coordOdessa = { lat: 46.487037, lng: 30.732549 },
     coordPoltava = { lat: 49.592754, lng: 34.547149 },
     centerMap = { lat: 48.379557, lng: 31.165632 },
+    addrKiev = "г.Киев, ул. Прорезная, 18/1Г",
+    addrOdessa = "г.Одесса, ул. Елисаветинская, 18",
+    addrPoltava = "г.Полтава, площадь Независимости, 7",
     map;
 
 var offices = ["Kiev", "Odessa", "Poltava"];
 var data = {
     "Kiev": {
         "coord": coordKiev,
-        "addr": "г.Киев, ул. Прорезная, 18/1г",
+        "addr": addrKiev,
         "img": imgKiev,
+        "info": '<span class="city">Киев</span><span class="phone">+38 (093) 887-39-08</span><span class="phone">+38 (097) 896-08-95</span><span class="phone">' + addrKiev + '</span>',
     },
-
     "Odessa": {
         "coord": coordOdessa,
-        "addr": "г.Одесса, ул. Елисаветинская, 18",
+        "addr": addrOdessa,
         "img": imgOdessa,
+        "info": '<span class="city">Одесса</span><span class="phone">+38 (066) 112-55-64</span><span class="phone">+38 (093) 438-62-76</span><span class="phone">' + addrOdessa + '</span>',
 
     },
     "Poltava": {
         "coord": coordPoltava,
-        "addr": "г.Полтава, площадь Независимости, 7",
+        "addr": addrPoltava,
         "img": imgPoltava,
+        "info": '<span class="city">Полтава</span><span class="phone">+38 (099) 000-94-45</span><span class="phone">+38 (098) 677-71-70</span><span class="phone">' + addrPoltava + '</span>',
     },
 }
 
@@ -53,7 +58,7 @@ function initMap() {
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infowindow.setContent(data[offices[i]].addr);
+                infowindow.setContent(data[offices[i]].info);
                 infowindow.open(map, marker);
             }
         })(marker, i));
