@@ -6,15 +6,40 @@
   <title>Corporate landing</title>
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="slick/slick.css" rel="stylesheet" type="text/css" />
+  <link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body>
   <header class="ma-header">
-    <h1 class="ma-header__title">There is no other platforms for you as like</h1>
-    <button class="ma-header__try"></button>
-    <p class="ma-help-text">No need to add cards details</p>
+    <div class="ma-front">
+      <h1 class="ma-front__title">There is no other <br> platforms for you as like</h1>
+      <a href="#id-subscribe" class="ma-front__try">try now</a>
+      <p class="ma-front__text">* No need to add cards details</p>
+    </div>
+    <div class="ma-slider" id="slider">
+      <div class="ma-slider-item">
+        <img src="img/Slider1.jpg" />
+      </div>
+      <div class="ma-slider-item">
+        <img src="img/Slider2.jpg" />
+      </div>
+      <div class="ma-slider-item">
+        <img src="img/Slider3.jpg" />
+      </div>
+      <div class="ma-slider-item">
+        <img src="img/Slider4.jpg" />
+      </div>
+      <div class="ma-slider-item">
+        <img src="img/Slider5.jpg" />
+      </div>
+    </div>
   </header>
   <section class="ma-design">
     <span class="ma-design__curva">new design</span>
@@ -73,11 +98,11 @@
       </div>
     </div>
     <div class="ma-team__brands">
-      <img src="img/brand1.jpg" alt="brand" class="ma-brand">
-      <img src="img/brand1.jpg" alt="brand" class="ma-brand">
-      <img src="img/brand1.jpg" alt="brand" class="ma-brand">
-      <img src="img/brand1.jpg" alt="brand" class="ma-brand">
-      <img src="img/brand1.jpg" alt="brand" class="ma-brand">
+      <img src="img/brand1.png" alt="brand" class="ma-brand">
+      <img src="img/brand2.png" alt="brand" class="ma-brand">
+      <img src="img/brand3.png" alt="brand" class="ma-brand">
+      <img src="img/brand4.png" alt="brand" class="ma-brand">
+      <img src="img/brand5.png" alt="brand" class="ma-brand">
     </div>
   </section>
   <section class="ma-awesome">
@@ -85,7 +110,7 @@
     <h1 class="ma-awesome__title">Some awesome features</h1>
     <p class="ma-awesome__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sapiente inventore quisquam doloribus consequuntur nam et adipisci sequi, deleniti voluptatibus, dolores natus dolor nisi similique, at nesciunt vitae odit? Quibusdam.</p>
   </section>
-  <section class="ma-subscribe">
+  <section class="ma-subscribe" id="id-subscribe">
     <span class="ma-subscribe__curva">new features</span>
     <h1 class="ma-subscribe__title">Over 1000 designers are using ...</h1>
     <form action="" class="ma-form">

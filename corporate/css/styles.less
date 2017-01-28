@@ -1,14 +1,21 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Exo:400,400i,500|Lato');
-
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500|Lato');
 // Variables
-@background_color: #9789f9;
+@background_color: #ccc;
 @text_color: #fff;
+@main_color: #fd545a;
+@accent_color: #f76f73;
+@form_background: #252956;
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
 
 html,
 body {
     height: 100%;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Exo", "Arial", sans-serif;
     background-color: @background_color;
     color: @text_color;
 }
@@ -19,5 +26,49 @@ ul {
 }
 
 [class^=ma-] {
-    border: 1px solid red;
+    // border: 1px solid red;
+}
+
+.ma-header {
+    position: relative;
+}
+
+.ma-front {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    z-index: 1;
+    width: 50vw;
+    text-align: center;
+    &__title {
+        font-size: 3em;
+        font-weight: 100;
+    }
+    &__try {
+        border: none;
+        background-color: @accent_color;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 15px 25px;
+        font-size: 1.1em;
+        border-radius: 3px;
+        outline: none;
+        text-decoration: none;
+        &:hover {
+            color: #000;
+        }
+    }
+    &__text {
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+}
+
+.ma-slider-item {
+    height: 100vh;
+    width: 100%;
+    & img {
+        height: inherit;
+        width: inherit;
+    }
 }

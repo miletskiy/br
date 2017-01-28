@@ -1,15 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,400i,500|Lato');
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500|Lato');
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
-  font-family: "Roboto", "Arial", sans-serif;
-  background-color: #9789f9;
+  font-family: "Exo", "Arial", sans-serif;
+  background-color: #ccc;
   color: #fff;
 }
 ul {
   list-style: none;
   padding: 0;
 }
-[class^=ma-] {
-  border: 1px solid red;
+.ma-header {
+  position: relative;
+}
+.ma-front {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  z-index: 1;
+  width: 50vw;
+  text-align: center;
+}
+.ma-front__title {
+  font-size: 3em;
+  font-weight: 100;
+}
+.ma-front__try {
+  border: none;
+  background-color: #f76f73;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  border-radius: 3px;
+  outline: none;
+  text-decoration: none;
+}
+.ma-front__try:hover {
+  color: #000;
+}
+.ma-front__text {
+  font-size: 0.8em;
+  padding-top: 10px;
+}
+.ma-slider-item {
+  height: 100vh;
+  width: 100%;
+}
+.ma-slider-item img {
+  height: inherit;
+  width: inherit;
 }
