@@ -2,29 +2,46 @@
 выведет все названия телефонов из него в виде списка.
 */
 
-function getData() {
-    $.getJSON("data/beetroot.json", function(data) {
-            console.log("success");
-            putToHtml(data);
-        }).done(function() {
-            console.log("second success");
-        })
-        .fail(function() {
-            console.log("error");
-        })
-        .always(function() {
-            console.log("complete");
-        });
-};
+let url = "data/beetroot.json";
+// let url = getUrl();
 
-function putToHtml(data) {
-    $.each(data, function(i, field){
-            $("#id_list").append("<li>"+ field.name + "</li>");
+function getUrl() {
+    // let url = locatino.url + "id";
+    // return url
+}
+
+function alex(data) {
+    $.each(data, function(i, phone) {
+        $("#id_list").append("<li>" + phone.snippet + "  " + phone.name + " i=" + i + "</li>");
+    });
+
+}
+let dataType = "json";
+
+function error() {
+    alert("Error!");
+}
+
+let params = {
+    url: "data/beetroot.json",
+    success: function (data) {
+        $.each(data, function(i, phone) {
+            $("#id_list").append("<li>" + phone.snippet + "  " + phone.name + " i=" + i + "</li>");
         });
-};
+    },
+    dataType: "json",
+    error: error
+}
+
 
 $(document).ready(function() {
     $("button").click(function() {
-        getData();
+        $.ajax(params);
+
+        // $.getJSON("data/beetroot.json", function(data) {
+        //     $.each(data, function(i, phone) {
+        //         $("#id_list").append("<li>" + phone.snippet + "  " + phone.name + " i=" + i + "</li>");
+        //     });
+        // })
     })
 });
