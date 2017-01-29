@@ -230,7 +230,25 @@ p {
   color: #a3a3a5;
 }
 .ma-awesome {
-  height: 60vh;
+  height: 95vh;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.ma-awesome__title {
+  margin-top: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.ma-awesome__text {
+  width: 46vw;
+  margin-bottom: 11vh;
+  font-weight: 500;
+}
+.ma-awesome__img {
+  width: 57vw;
 }
 .ma-subscribe {
   background-color: #252956;
