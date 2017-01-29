@@ -6,7 +6,8 @@
 @text_color: #222222;
 @main_color: #fd545a;
 @accent_color: #f76f73;
-@form_background: #252956;
+@form_background: #323969;
+@form_input: #999cb4;
 @text: #858585;
 * {
     box-sizing: border-box;
@@ -66,7 +67,7 @@ p {
         text-decoration: none;
         transition: 0.3s all;
         &:hover {
-            color: #000;
+            color: @main_color;
             background-color: #a3a3a5;
         }
     }
@@ -287,7 +288,98 @@ p {
     }
 }
 
+// Subscribe section
 .ma-subscribe {
     background-color: @form_background;
     height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        color: #fff;
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 2.2em;
+    }
+    &__link {
+        color: @form_input;
+        &:hover {
+            color: @accent_color;
+            text-decoration: underline;
+        }
+    }
+    &__trial {
+        width: 24vw;
+        align-self: flex-end;
+        color: #fff;
+    }
+    &__tos {
+        margin-top: 5vh;
+    }
+}
+
+.ma-form {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5vh;
+    &__text {
+        height: 7vh;
+        background: none;
+        border: 1px solid @form_input;
+        outline: 0;
+        border-radius: 3px;
+        padding-left: 25px;
+        color: #fff;
+        width: 20vw;
+    }
+    &__email {
+        height: 7vh;
+        background: none;
+        border: 1px solid @form_input;
+        outline: 0;
+        border-radius: 3px;
+        padding-left: 25px;
+        color: #fff;
+        width: 20vw;
+    }
+    &__password {
+        height: 7vh;
+        background: none;
+        border: 1px solid @form_input;
+        outline: 0;
+        border-radius: 3px;
+        padding-left: 25px;
+        color: #fff;
+        width: 20vw;
+    }
+    &__submit {
+        border: none;
+        background-color: @accent_color;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px 64px;
+        font-size: 1.1em;
+        border-radius: 3px;
+        outline: none;
+        text-decoration: none;
+        transition: 0.3s all;
+        &:hover {
+            color: @main_color;
+            background-color: #a3a3a5;
+        }
+        &:before {
+            content: "";
+            background-image: url("../img/arrow.png");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 45px;
+            position: absolute;
+            top: -9vh;
+            right: 15vw;
+        }
+    }
 }
