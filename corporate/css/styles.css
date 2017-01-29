@@ -42,14 +42,16 @@ p {
   background-color: #f76f73;
   text-transform: uppercase;
   color: #fff;
-  padding: 15px 25px;
+  padding: 15px 50px;
   font-size: 1.1em;
   border-radius: 3px;
   outline: none;
   text-decoration: none;
+  transition: 0.3s all;
 }
 .ma-front__try:hover {
   color: #000;
+  background-color: #a3a3a5;
 }
 .ma-front__text {
   font-size: 0.8em;
@@ -109,6 +111,7 @@ p {
 .ma-features {
   background-image: url("../img/design.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -178,14 +181,58 @@ p {
   font-weight: 500;
   font-size: 13px;
 }
+.ma-team {
+  background-image: url("../img/team.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ma-team__people {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 85vw;
+  margin-bottom: 10vh;
+}
+.ma-team__brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75vw;
+}
+.ma-member {
+  width: 23vw;
+}
+.ma-member__photo {
+  width: 70px;
+  height: 70px;
+  background-color: #3d3c4c;
+  margin: auto;
+}
+.ma-member__name {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.ma-member__job {
+  margin-top: 0;
+  text-transform: capitalize;
+  color: #f76f73;
+  font-weight: 500;
+}
+.ma-member__describe {
+  font-style: italic;
+  font-weight: 600;
+  color: #a3a3a5;
+}
 .ma-awesome {
   height: 60vh;
 }
 .ma-subscribe {
   background-color: #252956;
   height: 60vh;
-}
-.ma-team {
-  background-image: url("../img/team.jpeg");
-  height: 70vh;
 }
