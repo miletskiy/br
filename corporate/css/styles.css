@@ -90,8 +90,8 @@ p {
   max-width: 65%;
 }
 .ma-left__title {
-  letter-spacing: 2px;
   font-size: 2em;
+  letter-spacing: 2px;
   font-weight: 400;
   margin-top: 5px;
 }
@@ -108,11 +108,18 @@ p {
 }
 .ma-features {
   background-image: url("../img/design.jpg");
+  background-size: cover;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.ma-features__title {
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: 1vh;
+  margin-bottom: 11vh;
 }
 .ma-features__blocks {
   display: flex;
@@ -122,6 +129,15 @@ p {
 .ma-item {
   width: 25vw;
   text-align: center;
+}
+.ma-item__title {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.ma-item__text {
+  font-weight: 500;
+  font-size: 13px;
 }
 .ma-note {
   height: 60vh;
