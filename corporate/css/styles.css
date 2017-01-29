@@ -140,7 +140,43 @@ p {
   font-size: 13px;
 }
 .ma-note {
-  height: 60vh;
+  height: 65vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.ma-note__left {
+  width: 52vw;
+  height: 75vh;
+  margin-top: -10vh;
+  bottom: 0;
+  content: "";
+  border-top: 75vh solid transparent;
+  border-left: 40vw solid #f76f73;
+}
+.ma-note__right {
+  width: 33vw;
+}
+.ma-note__title {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.ma-note__dots {
+  color: #f76f73;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+.ma-note__image {
+  position: absolute;
+  width: 42vw;
+  left: 4vw;
+}
+.ma-note__image svg {
+  width: inherit;
+}
+.ma-note__text {
+  font-weight: 500;
+  font-size: 13px;
 }
 .ma-awesome {
   height: 60vh;
