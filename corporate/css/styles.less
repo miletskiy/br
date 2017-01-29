@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500|Lato');
 // Variables
 @background_color: #e7e7e7;
-@text_color: #d4d4dd4;
+// @text_color: #d4d4dd;
+@text_color: #222222;
 @main_color: #fd545a;
 @accent_color: #f76f73;
 @form_background: #252956;
@@ -27,8 +28,11 @@ ul {
 }
 
 p {
-    font-family: Lato;
+    font-family: Exo;
+    font-size: 14px;
     color: @text;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 [class^=ma-] {
@@ -82,22 +86,38 @@ p {
 // Design section
 .ma-design {
     display: flex;
-    height: 80vh;
-    &__left {}
+    height: 85vh;
+    position: relative;
+    &__left {
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__right {
         background-color: @background_color;
         height: 100%;
-        width: 100%;
+        width: 40vw;
+        &:after {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            border-top: 60vh solid transparent;
+            border-right: 40vw solid @accent_color;
+        }
     }
 }
 
+.ma-wrapper-center {
+    max-width: 65%;
+}
+
 .ma-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     &__title {
         letter-spacing: 2px;
         font-size: 2em;
+        font-weight: 400;
+        margin-top: 5px;
     }
     &__dots {
         color: @accent_color;
@@ -106,24 +126,41 @@ p {
     }
 }
 
-.ma-wrapper-center {
-    max-width: 70%;
-}
-
 .curva-mixin {
     color: @accent_color;
     text-transform: uppercase;
     font-size: 0.9em;
+    letter-spacing: 3px;
+
 }
 
 // Features section
 .ma-features {
     background-image: url("../img/design.jpg");
     height: 80vh;
-    text-align: center;
-
-
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {}
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        // align-items: center;
+        // flex-direction: column;
+    }
 }
+
+.ma-item {
+    width: 25vw;
+    text-align: center;
+    &__logo {
+        // text-align: center;
+    }
+}
+
 // Note section
 .ma-note {
     height: 60vh;
@@ -142,5 +179,4 @@ p {
 .ma-team {
     background-image: url("../img/team.jpeg");
     height: 70vh;
-
 }
