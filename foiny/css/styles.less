@@ -1,0 +1,45 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Exo');
+// Variables
+@background_color: #e7e7e7;
+@main_color: #000;
+@accent_color: #25db72;
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: @background_color;
+}
+
+.ma-navbar {
+    background-color: @main_color;
+}
+
+.ma-top-menu {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-right: 15vw !important;
+    text-transform: uppercase;
+}
+
+.navbar-default {
+    .navbar-nav {
+        .active {
+            a {
+                color: @accent_color;
+            }
+        }
+    }
+}
+
+// .active {
+//     a {
+//         color: @accent_color;
+//     }
+// }
